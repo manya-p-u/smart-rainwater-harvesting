@@ -1,0 +1,43 @@
+/* Center layout */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Form card */
+.form-card {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Inputs */
+.form-card input,
+.form-card select {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Button */
+.form-card button {
+    width: 95%;
+    padding: 12px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-card button:hover {
+    background: #023e8a;
+}

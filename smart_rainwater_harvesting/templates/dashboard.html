@@ -1,0 +1,21 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<h2>Dashboard</h2>
+
+<form method="POST">
+<select name="location" onchange="this.form.submit()">
+{% for loc in locations %}
+<option {% if loc==location %}selected{% endif %}>{{loc}}</option>
+{% endfor %}
+</select>
+</form>
+
+<p><b>Predicted Rainfall:</b> {{prediction}}</p>
+
+<script>
+const rainfallData = JSON.parse('{{ rainfall | tojson | safe }}');
+</script>
+
+<canvas id="rainChart"></canvas>
+
+<script src="/static/js/charts.js"></script>

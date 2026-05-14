@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <div class="form-card">
+
+        <h2>📊 Result</h2>
+
+        <p><b>📍 Location:</b> {{location}}</p>
+        <p><b>🌧️ Rainfall:</b> {{rainfall}} mm</p>
+
+        <h3>💧 Water Collected: {{water}} liters</h3>
+
+        <p style="color:green;"><b>{{message}}</b></p>
+
+        <hr>
+
+        <h3>🏆 Recommended Tank</h3>
+        <p>{{tank}}</p>
+
+        <hr>
+
+        <h3>🚿 Water Usage Suggestion</h3>
+        <p>{{usage_msg}}</p>
+
+        <hr>
+
+        <h3>💰 Savings</h3>
+        <p>₹{{savings}}</p>
+        <p>Payback: {{payback}} years</p>
+
+        <br>
+
+        <a href="/calculator">🔙 Back</a>
+        <br><br>
+        <a href="/pdf">📥 Download Report</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

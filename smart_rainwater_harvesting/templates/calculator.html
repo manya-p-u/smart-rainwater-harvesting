@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <div class="form-card">
+
+        <h2>🚰 Rainwater Calculator</h2>
+        <p class="subtitle">Estimate water collection and usage</p>
+
+        <form method="POST">
+
+            <input type="number" name="roof_area" placeholder="Enter Roof Area (sq.m)" required>
+
+            <input type="number" name="family" placeholder="Enter Family Members" required>
+
+            <select name="location">
+            {% for loc in locations %}
+                <option>{{loc}}</option>
+            {% endfor %}
+            </select>
+
+            <button type="submit">Calculate</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
